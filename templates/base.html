@@ -1,0 +1,15 @@
+{% load menu_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Menu</title>
+</head>
+<body>
+    <h1>Навигация</h1>
+    {% draw_menu 'main_menu' %}
+
+    <hr>
+    <p>Контент страницы: {{ request.path }}</p>
+</body>
+</html>
